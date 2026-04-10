@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPGA Workshop - PYNQ-Z2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background: #eee;
+            padding: 4px 6px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 FPGA Workshop using PYNQ-Z2</h1>
+
+    <h2>📌 Introduction</h2>
+    <p>
+        This repository documents hands-on work completed during an FPGA workshop using the 
+        <strong>PYNQ-Z2 development board</strong>. The goal is to build a strong foundation in 
+        digital logic design through practical experiments.
+    </p>
+    <p>
+        Each experiment uses physical inputs (switches/buttons) and visual outputs (LEDs), making learning interactive.
+    </p>
+
+    <h2>🎯 Objectives</h2>
+    <ul>
+        <li>Understand fundamental digital logic concepts</li>
+        <li>Implement combinational circuits</li>
+        <li>Learn hardware-software interaction using Python (PYNQ)</li>
+        <li>Gain practical FPGA experience</li>
+    </ul>
+
+    <h2>🧩 Concepts Covered</h2>
+
+    <h3>🔹 Digital Logic Basics</h3>
+    <ul>
+        <li>AND, OR, NOT, NAND, NOR, XOR gates</li>
+        <li>Truth tables and logic expressions</li>
+    </ul>
+
+    <h3>🔹 Code Conversion</h3>
+    <ul>
+        <li>Binary to Gray code</li>
+        <li>Gray to Binary conversion</li>
+    </ul>
+
+    <h3>🔹 Arithmetic Circuits</h3>
+    <ul>
+        <li>Half Adder</li>
+        <li>Half Subtractor</li>
+    </ul>
+
+    <h3>🔹 Data Selection Circuits</h3>
+    <ul>
+        <li>Multiplexer (MUX)</li>
+    </ul>
+
+    <h2>🛠️ Hardware & Tools</h2>
+
+    <h3>🔧 Hardware</h3>
+    <ul>
+        <li>PYNQ-Z2 FPGA Development Board</li>
+        <li>USB cable</li>
+    </ul>
+
+    <h3>💻 Software</h3>
+    <ul>
+        <li>Jupyter Notebook (PYNQ environment)</li>
+        <li>Python</li>
+    </ul>
+
+    <h2>🔍 About the PYNQ-Z2</h2>
+    <p>
+        The PYNQ-Z2 is based on the <strong>Xilinx Zynq-7000 SoC</strong>, combining:
+    </p>
+    <ul>
+        <li><strong>Processing System (PS):</strong> ARM Cortex-A9</li>
+        <li><strong>Programmable Logic (PL):</strong> FPGA fabric</li>
+    </ul>
+
+    <h2>⚙️ Key Features</h2>
+    <ul>
+        <li>Xilinx XC7Z020 FPGA</li>
+        <li>512 MB DDR3 RAM</li>
+        <li>MicroSD support</li>
+        <li>USB & Ethernet</li>
+        <li>HDMI I/O</li>
+        <li>Push buttons, switches, LEDs, RGB LEDs</li>
+    </ul>
+
+    <h2>🧪 How Experiments Work</h2>
+    <ol>
+        <li>Read input from switches/buttons</li>
+        <li>Process logic</li>
+        <li>Display output using LEDs</li>
+    </ol>
+
+    <p>Most programs run continuously:</p>
+    <pre>
+while True:
+    # read inputs
+    # apply logic
+    # update LEDs
+    </pre>
+
+    <h2>📁 Project Structure</h2>
+    <pre>
+FPGA-Workshop/
+│
+├── Day 1/   → Basic Logic Gates
+├── Day 2/   → Code Conversion
+├── Day 3/   → Adders & Multiplexer
+├── Day 4/   → Practice Work
+└── README.md
+    </pre>
+
+    <h2>▶️ Getting Started</h2>
+    <ol>
+        <li>Connect PYNQ-Z2 to your laptop</li>
+        <li>Power using USB</li>
+        <li>Open Jupyter environment</li>
+        <li>Run the code</li>
+        <li>Use switches to test</li>
+    </ol>
+
+    <h2>⚠️ Notes</h2>
+    <ul>
+        <li>Programs may run indefinitely (<code>while True</code>)</li>
+        <li>Press <strong>Ctrl + C</strong> to stop</li>
+        <li>Ensure proper power connection</li>
+    </ul>
+
+    <h2>📚 Learning Outcome</h2>
+    <ul>
+        <li>Hands-on FPGA experience</li>
+        <li>Understanding digital circuits</li>
+        <li>Hardware-software co-design basics</li>
+    </ul>
+
+    <h2>🤝 Usage</h2>
+    <p>
+        This repository is for learning purposes. You are free to explore and modify the experiments.
+    </p>
+
+</div>
+
+</body>
+</html>
